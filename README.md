@@ -1,19 +1,17 @@
-# Ihsan Ul Haq — GitHub Pages Portfolio
+# Ihsan Ul Haq — Academic Research Profile
 
-A simple, responsive academic/research portfolio built with plain HTML and CSS.
+GitHub Pages repository: `Ihsanul-haq.github.io`
 
-## Files
-- `index.html` — main website
-- `style.css` — design and responsive layout
-- `Ihsan_Ul_Haq_CV.pdf` — CV button target
+## Files to upload
+- `index.html`
+- `style.css`
+- `assets/profile.jpg`
+- `Ihsan_Haq@CV.pdf` (your own current CV)
 
-## Publish on GitHub Pages
-1. Create a new GitHub repository, for example `ihsan-ul-haq.github.io`.
-2. Upload these three files to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then Save.
-6. Your site will appear at `https://YOUR-GITHUB-USERNAME.github.io/`.
+The website CV buttons point to `Ihsan_Haq@CV.pdf`. Keep this exact filename whenever you replace your CV.
 
-## Important
-Google Scholar, LinkedIn and GitHub links are already configured in `index.html`.
+## Full publications link in your CV
+In your CV, make the words **Full Publication List** a hyperlink to:
+`https://ihsanul-haq.github.io/#publications`
+
+That takes readers directly to the complete Publications section.
