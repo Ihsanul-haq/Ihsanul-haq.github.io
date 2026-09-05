@@ -153,6 +153,24 @@ main { max-width: var(--content-width); margin: 0 auto; padding: 0 1.5rem; }
   padding: 4.5rem 0 3rem;
 }
 
+.hero-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.hero-text { flex: 1; min-width: 0; }
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
 .hero-kicker {
   font-family: var(--font-sans);
   font-size: 0.82rem;
@@ -276,6 +294,22 @@ main { max-width: var(--content-width); margin: 0 auto; padding: 0 1.5rem; }
   line-height: 1.4;
 }
 
+.permalink {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.85em;
+  color: var(--ink-muted);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  opacity: 0;
+}
+li:hover .permalink,
+.project-item:hover .permalink,
+.permalink:focus {
+  opacity: 1;
+}
+.permalink:hover { color: var(--accent-strong); }
+
 .pub-authors {
   color: var(--ink-secondary);
   margin: 0 0 0.2rem;
@@ -333,6 +367,12 @@ main { max-width: var(--content-width); margin: 0 auto; padding: 0 1.5rem; }
   font-size: 0.98rem;
 }
 
+.cert-link {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
 /* Skills */
 
 .skills-grid {
@@ -385,6 +425,18 @@ main { max-width: var(--content-width); margin: 0 auto; padding: 0 1.5rem; }
   body { font-size: 17px; }
 
   .nav-toggle { display: flex; }
+
+  .hero-grid {
+    flex-direction: column-reverse;
+    gap: 1.25rem;
+  }
+
+  .hero-photo {
+    width: 96px;
+    height: 96px;
+  }
+
+  .permalink { opacity: 1; }
 
   .site-nav {
     position: absolute;

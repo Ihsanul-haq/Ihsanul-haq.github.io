@@ -28,9 +28,14 @@ deployed directly via GitHub Pages from the repository root.
   `.project-group` for a new research direction.
 - **CV** — replace `Ihsan_Haq@CV.pdf` in the repository root; it's linked
   from the hero, publications note, and contact sections.
-- **Profile photo** — not currently used; add an `<img>` in the hero
-  section of `index.html` and reference an image placed in the repo root
-  or an `assets/` folder if desired.
+- **Profile photo** — expected at `assets/profile.jpg`; referenced by the
+  `<img class="hero-photo">` in the hero section.
+- **Certificates** — expected at `certifications/certificates.pdf`;
+  linked from the Certifications section.
+- **Permalinks** — every publication (`#pub-1` to `#pub-9`) and project
+  (`#proj-<slug>`) has a stable anchor id, with a small "¶" link next to
+  each title/entry that points to it. Copy these URLs to link individual
+  entries from the CV or elsewhere.
 
 ## Local preview
 
