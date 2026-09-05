@@ -1,17 +1,49 @@
-# Ihsan Ul Haq — Academic Research Profile
+# ihsanul-haq.github.io
 
-GitHub Pages repository: `Ihsanul-haq.github.io`
+Personal academic website for **Ihsan Ul Haq** — electrical engineer and
+researcher working on AI for energy systems, smart grids, and intelligent
+transportation systems.
 
-## Files to upload
-- `index.html`
-- `style.css`
-- `assets/profile.jpg`
-- `Ihsan_Haq@CV.pdf` (your own current CV)
+Live at: https://ihsanul-haq.github.io/
 
-The website CV buttons point to `Ihsan_Haq@CV.pdf`. Keep this exact filename whenever you replace your CV.
+## Structure
 
-## Full publications link in your CV
-In your CV, make the words **Full Publication List** a hyperlink to:
-`https://ihsanul-haq.github.io/#publications`
+```
+.
+├── index.html   # single-page site: about, education, research, publications, projects, experience, skills, contact
+├── style.css    # all styling
+└── README.md
+```
 
-That takes readers directly to the complete Publications section.
+The site is a single static page with no build step — plain HTML and CSS,
+deployed directly via GitHub Pages from the repository root.
+
+## Updating content
+
+- **Publications** — add a new `<li>` inside `.pub-list` in `index.html`
+  (title, authors, venue/year, DOI and paper links). The list is numbered
+  automatically and reversed, so newest entries go at the top of the list.
+- **Projects** — grouped by research direction inside `#projects`. Add a
+  new `.project-item` under the relevant `.project-group`, or add a new
+  `.project-group` for a new research direction.
+- **CV** — replace `Ihsan_Haq@CV.pdf` in the repository root; it's linked
+  from the hero, publications note, and contact sections.
+- **Profile photo** — not currently used; add an `<img>` in the hero
+  section of `index.html` and reference an image placed in the repo root
+  or an `assets/` folder if desired.
+
+## Local preview
+
+Open `index.html` directly in a browser, or serve the folder locally:
+
+```
+python3 -m http.server 8000
+```
+
+then visit `http://localhost:8000`.
+
+## Deployment
+
+GitHub Pages serves this repository from the `main` branch root
+automatically — no workflow or build step required. Pushing to `main`
+updates the live site within a minute or two.
