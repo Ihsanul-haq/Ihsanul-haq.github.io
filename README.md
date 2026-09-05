@@ -10,13 +10,18 @@ Live at: https://ihsanul-haq.github.io/
 
 ```
 .
-├── index.html   # single-page site: about, education, research, publications, projects, experience, skills, contact
+├── index.html   # single-page site with a sidebar (photo, education,
+│                # skills, certifications) and a main column (about,
+│                # research, publications, projects, experience)
 ├── style.css    # all styling
 └── README.md
 ```
 
 The site is a single static page with no build step — plain HTML and CSS,
-deployed directly via GitHub Pages from the repository root.
+deployed directly via GitHub Pages from the repository root. Below the
+hero, the page splits into a fixed-width left sidebar and a wider main
+content column (`.layout` in `index.html`); it collapses to one column
+on narrower screens.
 
 ## Updating content
 
@@ -27,11 +32,11 @@ deployed directly via GitHub Pages from the repository root.
   new `.project-item` under the relevant `.project-group`, or add a new
   `.project-group` for a new research direction.
 - **CV** — replace `Ihsan_Haq@CV.pdf` in the repository root; it's linked
-  from the hero, publications note, and contact sections.
+  from the sidebar, publications note, and contact sections.
 - **Profile photo** — expected at `assets/profile.jpg`; referenced by the
-  `<img class="hero-photo">` in the hero section.
+  `<img class="sidebar-photo">` at the top of the sidebar.
 - **Certificates** — expected at `certifications/certificates.pdf`;
-  linked from the Certifications section.
+  linked from the Certifications block in the sidebar.
 - **Anchor links for your CV** — every publication (`#pub-1` to `#pub-9`)
   and project (`#proj-<slug>`) has a stable id on its container element.
   There's no visible marker on the page; copy the id straight from the
