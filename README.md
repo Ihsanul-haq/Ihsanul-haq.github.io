@@ -32,10 +32,10 @@ deployed directly via GitHub Pages from the repository root.
   `<img class="hero-photo">` in the hero section.
 - **Certificates** — expected at `certifications/certificates.pdf`;
   linked from the Certifications section.
-- **Permalinks** — every publication (`#pub-1` to `#pub-9`) and project
-  (`#proj-<slug>`) has a stable anchor id, with a small "¶" link next to
-  each title/entry that points to it. Copy these URLs to link individual
-  entries from the CV or elsewhere.
+- **Anchor links for your CV** — every publication (`#pub-1` to `#pub-9`)
+  and project (`#proj-<slug>`) has a stable id on its container element.
+  There's no visible marker on the page; copy the id straight from the
+  HTML (or from the list below) to link an individual entry from your CV.
 
 ## Local preview
 
