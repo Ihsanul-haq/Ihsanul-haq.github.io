@@ -181,7 +181,7 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 0 2rem; }
 }
 
 .sidebar-block {
-  padding: 1.75rem 0;
+  padding: 1.4rem 0;
   border-bottom: 1px solid var(--rule);
 }
 .sidebar-block:first-child { padding-top: 0; }
@@ -221,7 +221,7 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 0 2rem; }
 /* Shared section styling (About + accordions in main content) */
 
 .section {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid var(--rule);
 }
 .section:first-child { padding-top: 0; }
@@ -230,11 +230,11 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 0 2rem; }
 
 .section h2 {
   font-family: var(--font-serif);
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
 }
-.section:not(.accordion) h2 { margin-bottom: 1.25rem; }
+.section:not(.accordion) h2 { margin-bottom: 1rem; }
 
 .section p {
   text-align: justify;
@@ -279,7 +279,7 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 0 2rem; }
 }
 
 .accordion-body {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 /* Shared badge-style link buttons (sidebar profile + contact) */
@@ -428,7 +428,7 @@ main { max-width: var(--page-width); margin: 0 auto; padding: 0 2rem; }
 
 /* Projects */
 
-.project-group { margin-bottom: 2.25rem; }
+.project-group { margin-bottom: 1.75rem; }
 .project-group:last-child { margin-bottom: 0; }
 
 .project-group h3 {
