@@ -137,7 +137,7 @@
         </p>
       </section>
 
-      <details class="section accordion" id="research" open>
+      <details class="section accordion" id="research">
         <summary>
           <h2>Research interests</h2>
           <span class="chevron" aria-hidden="true"></span>
@@ -151,7 +151,7 @@
         </div>
       </details>
 
-      <details class="section accordion" id="publications" open>
+      <details class="section accordion" id="publications">
         <summary>
           <h2>Publications</h2>
           <span class="chevron" aria-hidden="true"></span>
@@ -216,7 +216,7 @@
         </div>
       </details>
 
-      <details class="section accordion" id="projects" open>
+      <details class="section accordion" id="projects">
         <summary>
           <h2>Projects</h2>
           <span class="chevron" aria-hidden="true"></span>
@@ -292,7 +292,7 @@
         </div>
       </details>
 
-      <details class="section accordion" id="experience" open>
+      <details class="section accordion" id="experience">
         <summary>
           <h2>Experience</h2>
           <span class="chevron" aria-hidden="true"></span>
@@ -370,6 +370,17 @@
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
+
+  function openTargetFromHash() {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (el && el.tagName === 'DETAILS') {
+      el.open = true;
+    }
+  }
+  window.addEventListener('hashchange', openTargetFromHash);
+  openTargetFromHash();
 </script>
 
 </body>
